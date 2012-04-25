@@ -1,2 +1,4 @@
-<p>Mistake: <%= mistake.names.capitalize %></p>
+<p>Mistake: <%= @mistake.name.capitalize %></p>
 <p>Severity: <%= @mistake.severity %></p>
+
+<%= link_to "back", mistakes_url %>

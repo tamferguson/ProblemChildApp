@@ -2,6 +2,7 @@
 
 <ul>
 <% @mistakes.each do |mistake| %>
-  <li>(<% mistake.severty %>) <% mistake.name %> </li>
+  <li>(<%= mistake.severity %>) <%= link_to( mistake.name, mistake_path(mistake.id)) %> </li>
 <% end %>
 </ul>
+<!-- <a href="mistake/<%#= mistake.id %>"><%#= mistake.name %></a> -->
